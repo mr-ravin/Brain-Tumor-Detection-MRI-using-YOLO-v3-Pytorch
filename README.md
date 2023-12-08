@@ -26,7 +26,7 @@
 ### Commands
 - To Train the model
   ```
-  python3 run.py --mode train --epoch 15
+  python3 run.py --mode train --epoch 12
   ```
 - To Test the model (and visualise predicted bboxes on image) 
   ```
