@@ -28,7 +28,7 @@
   ```
   python3 run.py --mode train --epoch 12
   ```
-- To Test the model (and visualise predicted bboxes on image) 
+- To visualise predicted bboxes on Test set 
   ```
   python3 run.py --mode test
   ```
