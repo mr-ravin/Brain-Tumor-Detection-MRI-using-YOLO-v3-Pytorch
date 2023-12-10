@@ -128,7 +128,7 @@ def train_yolo_v3():
                 [   A.Resize(height=DIM, width=DIM),
                     A.CLAHE(p=1.0),
                     A.HorizontalFlip(p=0.5),
-                    A.ShiftScaleRotate(rotate_limit=20, p=0.5, border_mode=cv2.BORDER_CONSTANT),
+                    A.Rotate(limit=30, p=0.25),
                     A.Normalize(mean=[0, 0, 0], std=[1, 1, 1], max_pixel_value=255,),
                     ToTensorV2(),
                 ], bbox_params=A.BboxParams(format="yolo", min_visibility=0.4, label_fields=[]),
